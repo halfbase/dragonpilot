@@ -150,6 +150,24 @@ class CAR(Platforms):
     CarSpecs(mass=3505. * CV.LB_TO_KG, wheelbase=2.82, steerRatio=14.8, tireStiffnessFactor=0.7983),
     dbc_dict('toyota_tnga_k_pt_generated', 'toyota_adas'),
   )
+
+  # Your new port definitions
+  ALPHARD_HYBRID = PlatformConfig(
+    [
+      ToyotaCarDocs("Toyota Alphard Hybrid 2016")
+    ],
+    CarSpecs(mass=4305. * CV.LB_TO_KG, wheelbase=3.0, steerRatio=14.2, tireStiffnessFactor=0.444),
+    dbc_dict('toyota_nodsu_pt_generated', 'toyota_adas'),
+  )
+
+  AYH30W = PlatformConfig(
+    [
+      ToyotaCarDocs("Toyota AYH30W 2016")
+    ],
+    CarSpecs(mass=4305. * CV.LB_TO_KG, wheelbase=3.0, steerRatio=14.2, tireStiffnessFactor=0.444),
+    dbc_dict('toyota_nodsu_pt_generated', 'toyota_adas'),
+  )
+
   TOYOTA_AVALON_2019 = PlatformConfig(
     [
       ToyotaCarDocs("Toyota Avalon 2019-21"),
